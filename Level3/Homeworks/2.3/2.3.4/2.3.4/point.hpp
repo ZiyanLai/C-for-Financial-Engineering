@@ -1,6 +1,6 @@
 //
 //  point.hpp
-//  2.3.3
+//  2.3.4
 //
 //  Created by Ziyan Lai on 5/29/20.
 //  Copyright © 2020 Ziyan Lai. All rights reserved.
@@ -24,18 +24,18 @@ public:
     Point(double x, double y);  // Constructor that takes value
     ~Point();
     
-//  getter of the coordinate
-    double X();
-    double Y();
+    // Getter of coordinates
+    double X() const;
+    double Y() const;
     
-//  setter of the coordinate
+    // Setter of coordinates
     void X(double newX);
     void Y(double newY);
     
-    void ToString();
-
-    double Distance();                // Distance from point to origin
-    double Distance(const Point& p);  // Distance between two points
+    void ToString() const;
+    
+    double Distance() const;
+    double Distance(const Point& p) const;
 
 };
 

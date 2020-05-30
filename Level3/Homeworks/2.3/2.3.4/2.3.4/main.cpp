@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  2.3.3
+//  2.3.4
 //
 //  Created by Ziyan Lai on 5/29/20.
 //  Copyright © 2020 Ziyan Lai. All rights reserved.
@@ -8,6 +8,7 @@
 
 
 #include "point.hpp"
+using namespace std;
 
 int main(){
     double xCor1, yCor1;
@@ -19,7 +20,7 @@ int main(){
     
     p1.ToString();
     std::cout << "X coordinate is: " << p1.X() << ", Y coordiante is: " << p1.Y() << std::endl;
-    std::cout << "Distance from point 1 to origin is: " << p1.Distance() << std::endl;
+    std::cout << "Distance from point to origin is: " << p1.Distance() << std::endl;
     
     double xCor2, yCor2;
     std::cout << "Please enter an X coordinate and a Y coordinate for point 2: " << std::endl;
@@ -29,7 +30,11 @@ int main(){
     Point p2(xCor2, yCor2);
     double distance = p1.Distance(p2);
     std::cout << "Distance from point 1 to point 2 is: " << distance << std::endl;
-
+    
+    const Point cp(1.5, 3.9);
+    cout << cp.X() << endl;
+    
+    
     return 0;
 }
 
