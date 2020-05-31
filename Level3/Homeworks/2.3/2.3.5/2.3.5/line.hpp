@@ -40,4 +40,4 @@ public:
 
 };
 
-#endif /* line_hpp */
+#endif

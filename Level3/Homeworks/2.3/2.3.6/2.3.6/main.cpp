@@ -21,18 +21,19 @@ int main() {
 
     Point center(xCor1, yCor1);
 
-    Circle c2(center, radius);
+    Circle circle(center, radius);
 
-    c2.ToString();
+    cout << "\ncircle: \n";
+    circle.ToString();
 
-    double circum = c2.Circumference();
-    cout << "Circle's circumference is " << circum << endl;
+    double circum = circle.Circumference();
+    cout << "\nCircle's circumference is " << circum << endl;
 
-    double area = c2.Area();
-    cout << "Circle's area is " << area << endl;
+    double area = circle.Area();
+    cout << "\nCircle's area is " << area << endl;
 
-    double diam = c2.Diameter();
-    cout << "Circle's diameter is " << diam << endl;
+    double diam = circle.Diameter();
+    cout << "\nCircle's diameter is " << diam << endl;
 
 
 

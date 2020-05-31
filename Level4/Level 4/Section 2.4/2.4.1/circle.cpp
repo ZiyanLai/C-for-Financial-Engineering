@@ -1,10 +1,13 @@
-//
-//  circle.cpp
-//  2.3.6
-//
-//  Created by Ziyan Lai on 5/30/20.
-//  Copyright © 2020 Ziyan Lai. All rights reserved.
-//
+/*
+ * fileName:          circle.cpp 
+ * @author:           Ziyan Lai <ziyanlai97@outlook.com>
+ * @lastModifiedBy:   Ziyan Lai
+ * @createdDate:      2020-05-31
+ * @lastModifiedDate: 2020-05-31
+ * Copyright © 2020 Ziyan Lai. All rights reserved.
+*/
+
+// Add assignment operator in addition to the previous Circle class
 
 #include "circle.hpp"
 
@@ -19,6 +22,21 @@ Circle::Circle(const Circle& anotherC) : center(anotherC.center), m_radius(anoth
 
 // Destructor
 Circle::~Circle(){}
+
+// Assignment Operator
+Circle& Circle::operator = (const Circle& anotherC)
+{
+    // check if self assignment
+    if (this == &anotherC)
+    {
+        // if self assignment, return the circle itself
+        return *this;
+    }
+    // if not self assignment
+    center = anotherC.center;       // assign the center 
+    m_radius = anotherC.m_radius;   // assign the radius
+    return *this;                   // return this circle
+}
 
 // Getter of the center point
 Point Circle::CenterPoint() const { return center; }
@@ -43,7 +61,7 @@ double Circle::Area() const  { return M_PI * pow(m_radius, 2); }
 
 // Report the circle
 void Circle::ToString() const {
-    cout << "Center: ";
+    cout << "\nCenter: ";
     center.ToString();
     cout << "Radius: ";
     cout << m_radius << endl;

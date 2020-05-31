@@ -1,10 +1,13 @@
-//
-//  circle.hpp
-//  2.3.6
-//
-//  Created by Ziyan Lai on 5/30/20.
-//  Copyright © 2020 Ziyan Lai. All rights reserved.
-//
+/*
+ * fileName:          circle.hpp 
+ * @author:           Ziyan Lai <ziyanlai97@outlook.com>
+ * @lastModifiedBy:   Ziyan Lai
+ * @createdDate:      2020-05-31
+ * @lastModifiedDate: 2020-05-31
+ * Copyright © 2020 Ziyan Lai. All rights reserved.
+*/
+
+// Add assignment operator in addition to the previous Circle class
 
 #ifndef CIRCLE_HPP
 #define CIRCLE_HPP
@@ -32,6 +35,9 @@ public:
 
 //  Destructor
     ~Circle(); 
+
+//  Assignment Operator
+    Circle& operator = (const Circle& anotherC);
 
 //  Getter of the center
     Point CenterPoint() const; 
