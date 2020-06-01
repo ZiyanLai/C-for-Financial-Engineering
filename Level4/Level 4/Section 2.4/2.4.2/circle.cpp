@@ -7,7 +7,7 @@
  * Copyright © 2020 Ziyan Lai. All rights reserved.
 */
 
-/* Add assignment operator in addition to the previous Circle class */
+/* Add Ostream Opeartors in addition to the previous Circle class */
 
 #include "circle.hpp"
 
@@ -64,4 +64,11 @@ string Circle::ToString() const {
     stringstream ss;
     ss << "Center: " << center.ToString() << " Radius: " << m_radius;
     return ss.str();
+}
+
+// Ostream operator for Circle class
+ostream& operator << (ostream&os, const Circle& c)
+{
+ os << c.ToString() << endl;
+ return os;
 }

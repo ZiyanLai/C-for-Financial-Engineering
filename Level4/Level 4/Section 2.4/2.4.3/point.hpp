@@ -7,7 +7,7 @@
  * Copyright © 2020 Ziyan Lai. All rights reserved.
 */
 
-/* Add Opeartors in addition to the previous Point class */
+/* Adding a constructor and making it explicit */
 
 #ifndef POINT_HPP
 #define POINT_HPP
@@ -26,7 +26,8 @@ private:
 public:
     Point();                          // Default Constructor
     Point(const Point& anotherP);     // Copy Constructor
-    Point(double x, double y);        // Constructor that takes value
+    Point(double x, double y);        // Constructor that takes 2 values
+    explicit Point(double value);     // Constructor that takes 1 value
     ~Point();                         // Destructor
     
     // Getter of coordinate X and Y 
@@ -55,5 +56,8 @@ public:
     Point& operator *= (double factor);         // Scale and assign the coordinate
 
 };
+
+ostream& operator << (ostream& os, const Point& p); // Ostream operator 
+
 
 #endif

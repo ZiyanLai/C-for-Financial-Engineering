@@ -7,7 +7,7 @@
  * Copyright © 2020 Ziyan Lai. All rights reserved.
 */
 
-/* Add Opeartors in addition to the previous Point class */
+/* Add Ostream Opeartors in addition to the previous Point class */
 
 #ifndef POINT_HPP
 #define POINT_HPP
@@ -55,5 +55,8 @@ public:
     Point& operator *= (double factor);         // Scale and assign the coordinate
 
 };
+
+ostream& operator << (ostream& os, const Point& p); // Ostream operator 
+
 
 #endif

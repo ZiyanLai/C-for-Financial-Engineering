@@ -7,7 +7,7 @@
  * Copyright © 2020 Ziyan Lai. All rights reserved.
 */
 
-/* Add assignment operator in addition to the previous Circle class */
+/* Add Ostream Opeartors in addition to the previous Circle class */
 
 #ifndef CIRCLE_HPP
 #define CIRCLE_HPP
@@ -64,5 +64,7 @@ public:
     string ToString() const; 
     
 };
+
+ostream& operator << (ostream& os, const Circle& c); // Ostream operator 
 
 #endif

@@ -7,7 +7,7 @@
  * Copyright © 2020 Ziyan Lai. All rights reserved.
 */
 
-/* Add Opeartors in addition to the previous Point class */
+/* Add Ostream Opeartors in addition to the previous Point class */
 
 #include "point.hpp"
 
@@ -42,7 +42,7 @@ void Point::Y(double newY){ m_y = newY; }
 // Fucntin to display the X and Y coordinate 
 string Point::ToString() const 
 {
-    std::stringstream ss;
+    stringstream ss;
     ss << "Point(" << m_x << "," << m_y << ")";
     return ss.str();
 }
@@ -50,14 +50,14 @@ string Point::ToString() const
 // Function to calculate the distance between a point to origin
 double Point::Distance() const 
 {
-    double res = std::sqrt(pow(m_x, 2) + pow(m_y, 2));
+    double res = sqrt(pow(m_x, 2) + pow(m_y, 2));
     return res;
 }
 
 // Function to calculate the distance between two points
 double Point::Distance(const Point& p) const 
 {
-    double res = std::sqrt(pow(m_x - p.m_x, 2) + pow(m_y-p.m_y, 2));
+    double res = sqrt(pow(m_x - p.m_x, 2) + pow(m_y-p.m_y, 2));
     return res;
 }
 
@@ -107,4 +107,11 @@ Point& Point::operator *= (double factor)
     m_x *= factor;  // scale and assign X coordinate
     m_y *= factor;  // scale and assign Y coordinate
     return *this;   // return this Point
+}
+
+// Ostream operator for Point class
+ostream& operator << (ostream&os, const Point& p)
+{
+ os << p.ToString() << endl;
+ return os;
 }

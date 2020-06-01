@@ -21,7 +21,5 @@ int main(int x, char* y[])
     int x=30;
     std::cout<<::x<<std::endl;
   }
-
-  A::A::B::B() { }
   return 0;
 }

@@ -7,7 +7,7 @@
  * Copyright © 2020 Ziyan Lai. All rights reserved.
 */
 
-// Add assignment operator in addition to the previous Line class
+/* Add assignment operator in addition to the previous Line class */
 
 #ifndef LINE_HPP
 #define LINE_HPP
@@ -38,7 +38,7 @@ public:
 
     void endPoint(const Point& anotherP);           // Getter for end point
 
-    void ToString() const;                          // Function to display the attributes of line
+    string ToString() const;                          // Function to display the attributes of line
 
     double Length() const;                          // Function to calculate the length of line
 

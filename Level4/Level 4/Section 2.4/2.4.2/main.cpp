@@ -39,18 +39,18 @@ int main()
     // display the attributes of point 2
     cout << "p2 = " << p2.ToString() << endl;
     
+
+
     cout << "\nNow let's test the operators of Point class: \n";
 
     // create p3 to test - operator
     Point p3 = -p1;
     cout << "p3 = -p1 = " << p3.ToString() << endl;
     
-
     // create p4 to test + operator
     Point p4 = p1 + p2;
     cout << "p4 = (p1 + p2) = " << p4.ToString() << endl;
     
-
     // create p5 to test * operator
     Point p5 = p1 * 4;
     cout << "(p1 * 4) = " << p5.ToString() << endl;
@@ -59,7 +59,6 @@ int main()
     p3 = p4;
     cout << "After (p3 == p4), p3 = " << p3.ToString() << endl;
     
-
     // test == operator
     // use ternary operator to print if p3 = p4 or not after assigning p3 = p4
     cout << "Is p3 equals to p4 now? " << ((p3 == p4) ? "Yes, p3 equals to p4" : "No, p3 is not equals to p4") << endl;
@@ -107,11 +106,22 @@ int main()
     // display circle2
     cout << "circle2:\n" << circle2.ToString() << endl;
     
-
     // use assignment operator to assign circle1 = circle2
     circle1 = circle2;
     // print circle1 after assignment
     cout << "\nAfter assiging circle1 = circle2,\nnow circle1 is:" << circle1.ToString() << endl;
+
+
+
+    // Test the Ostream Operators for different class
+    cout << "\nNow let's test the Ostream Operators: \n\n";
+
+    // Test the Ostream Operator for Point
+    cout << "Ostream Operator for Point:\n"<<"point1: " << p1 << endl;
+    // Test the Ostream Operator for Line
+    cout << "Ostream Operator for Line:\n"<<"line1:\n" << line1 << endl;
+    // Test the Ostream Operator for Circle
+    cout << "Ostream Operator for Circle:\n"<<"circle1:\n" << circle1 << endl;
 
     return 0;
 }

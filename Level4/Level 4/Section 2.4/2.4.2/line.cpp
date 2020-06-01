@@ -7,7 +7,7 @@
  * Copyright © 2020 Ziyan Lai. All rights reserved.
 */
 
-/* Add assignment operator in addition to the previous Line class */
+/* Add Ostream Opeartors in addition to the previous Line class */
 
 #include "line.hpp"
 
@@ -48,12 +48,21 @@ void Line::startPoint(const Point& anotherP){ p1 = anotherP; }
 // Setter of end point
 void Line::endPoint(const Point& anotherP) { p2 = anotherP; }
 
+// Function to store the attribute into a string for diaplay
 string Line::ToString() const{
     stringstream ss;
     ss << "Start " << p1.ToString() << " End " << p2.ToString();
     return ss.str(); 
 }
 
+// Function to calculate the length of Line
 double Line::Length() const {
     return p1.Distance(p2);
+}
+
+// Ostream operator for Line class
+ostream& operator << (ostream&os, const Line& l)
+{
+ os << l.ToString() << endl;
+ return os;
 }
