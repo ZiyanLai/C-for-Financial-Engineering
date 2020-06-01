@@ -109,7 +109,7 @@ int main()
     // use assignment operator to assign circle1 = circle2
     circle1 = circle2;
     // print circle1 after assignment
-    cout << "\nAfter assiging circle1 = circle2,\nnow circle1 is:" << circle1.ToString() << endl;
+    cout << "\nAfter assiging circle1 = circle2,\nnow circle1 is: " << circle1.ToString() << endl;
 
 
 
