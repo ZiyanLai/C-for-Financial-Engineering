@@ -10,6 +10,7 @@
 /* Add Ostream Opeartors in addition to the previous Line class */
 
 #include "line.hpp"
+using namespace std;
 
 Line::Line() : p1(0, 0), p2(0, 0) {} // Default Constructor
 
@@ -49,7 +50,8 @@ void Line::startPoint(const Point& anotherP){ p1 = anotherP; }
 void Line::endPoint(const Point& anotherP) { p2 = anotherP; }
 
 // Function to store the attribute into a string for diaplay
-string Line::ToString() const{
+string Line::ToString() const
+{
     stringstream ss;
     ss << "Start " << p1.ToString() << " End " << p2.ToString();
     return ss.str(); 

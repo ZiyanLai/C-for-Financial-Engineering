@@ -7,11 +7,10 @@
  * Copyright © 2020 Ziyan Lai. All rights reserved.
 */
 
-/* Add Ostream Opeartors in addition to the previous Line class */
+/* Make Ostream Opeartors as a friend in addition to the previous Line class */
 
 #ifndef LINE_HPP
 #define LINE_HPP
-#include <iostream>
 #include "point.hpp"
 using namespace std; 
 
@@ -35,16 +34,16 @@ public:
     // Assignment Operator
     Line& operator = (const Line& anotherLine);     
 
-    // Setter for start point 
+    // Getter for start point 
     Point startPoint() const;                       
 
-    // Setter for end point
+    // Getter for end point
     Point endPoint() const;                         
 
-    // Getter for start point 
+    // Setter for start point 
     void startPoint(const Point& anotherP);           
 
-    // Getter for end point
+    // Setter for end point
     void endPoint(const Point& anotherP);           
 
     // Function to display the attributes of line

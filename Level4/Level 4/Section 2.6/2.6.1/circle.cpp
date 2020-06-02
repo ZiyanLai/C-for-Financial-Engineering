@@ -10,6 +10,8 @@
 /* Add Circle class into namespace ZiyanLai::CAD */
 
 #include "circle.hpp"
+using namespace std;
+
 namespace ZiyanLai
 {
     namespace CAD

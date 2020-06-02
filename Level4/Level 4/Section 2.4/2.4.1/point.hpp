@@ -11,9 +11,8 @@
 
 #ifndef POINT_HPP
 #define POINT_HPP
-#include <iostream>
+#include <sstream>
 #include <cmath>
-#include "sstream"
 using namespace std;
 
 // Point class
@@ -53,7 +52,6 @@ public:
     bool operator == (const Point& p) const;    // Equally compare operator
     Point& operator = (const Point& source);    // Assignment operator
     Point& operator *= (double factor);         // Scale and assign the coordinate
-
 };
 
 #endif

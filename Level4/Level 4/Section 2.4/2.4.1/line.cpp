@@ -10,6 +10,7 @@
 /* Add assignment operator in addition to the previous Line class */
 
 #include "line.hpp"
+using namespace std;
 
 Line::Line() : p1(0, 0), p2(0, 0) {} // Default Constructor
 

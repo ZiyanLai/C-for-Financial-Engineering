@@ -10,16 +10,14 @@
 /* No new changes from previous script */
 
 #include "point.hpp"
+#include <iostream>
+using namespace std;
 
 // Default Constructor
 Point::Point() : m_x(0), m_y(0){} // set the X and Y coordinates to 0 by default
 
 // Copy Constructor
-Point::Point(const Point& anotherP)
-{                    
-    m_x = anotherP.m_x;
-    m_y = anotherP.m_y;
-}
+Point::Point(const Point& anotherP) : m_x(anotherP.m_x), m_y(anotherP.m_y){}
 
 // Constructor that takes 2 value
 Point::Point(double x, double y) : m_x(x), m_y(y){}     
@@ -51,44 +49,25 @@ string Point::ToString() const
 }
 
 // Function to calculate the distance between a point to origin
-double Point::Distance() const 
-{
-    double res = sqrt(pow(m_x, 2) + pow(m_y, 2));
-    return res;
-}
+double Point::Distance() const { return sqrt(pow(m_x, 2) + pow(m_y, 2)); }
 
 // Function to calculate the distance between two points
-double Point::Distance(const Point& p) const 
-{
-    double res = sqrt(pow(m_x - p.m_x, 2) + pow(m_y-p.m_y, 2));
-    return res;
-}
+double Point::Distance(const Point& p) const { return sqrt(pow(m_x - p.m_x, 2) + pow(m_y-p.m_y, 2)); }
 
 // Implementations of member opeartors overloading
 
 // Negate the coordinate 
-Point Point::operator - () const            
-{
-    return Point(-m_x, -m_y);
-}
+Point Point::operator - () const { return Point(-m_x, -m_y); }
 
 // Scale the coordinate
-Point Point::operator * (double factor) const   
-{
-    return Point(m_x * factor, m_y * factor);
-}
+Point Point::operator * (double factor) const { return Point(m_x * factor, m_y * factor); }
 
 // Add the coordinate
-Point Point::operator + (const Point& p) const                  
-{
-    return Point(m_x + p.m_x, m_y + p.m_y);
-}
+Point Point::operator + (const Point& p) const { return Point(m_x + p.m_x, m_y + p.m_y); }
 
 // Equally compare operator
 bool Point::operator == (const Point& p) const    
-{
-    return (m_x == p.m_x && m_y == p.m_y);
-}
+{ return (m_x == p.m_x && m_y == p.m_y); }
 
 // Assignment operator
 Point& Point::operator = (const Point& source)    
@@ -99,8 +78,8 @@ Point& Point::operator = (const Point& source)
     }
 
     // if not self assignment
-    this->m_x = source.m_x; // assign X coordinate from source's X coordinate
-    this->m_y = source.m_y; // assign Y coordinate from source's Y coordinate
+    m_x = source.m_x; // assign X coordinate from source's X coordinate
+    m_y = source.m_y; // assign Y coordinate from source's Y coordinate
     return *this;           // return this Point
 }
 

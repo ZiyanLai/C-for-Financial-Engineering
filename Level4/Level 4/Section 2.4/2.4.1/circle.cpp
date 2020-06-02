@@ -10,6 +10,7 @@
 /* Add assignment operator in addition to the previous Circle class */
 
 #include "circle.hpp"
+using namespace std;
 
 // Default Constructor 
 Circle::Circle(){}
@@ -48,7 +49,7 @@ double Circle::Radius() const { return m_radius; }
 void Circle::CenterPoint(const Point& anotherP){ center = anotherP; }
 
 //  Setter of the radius
-void Circle::Radius(const double& anotherR){ m_radius = anotherR; }
+void Circle::Radius(double anotherR){ m_radius = anotherR; }
 
 // Calculate the diameter of circle
 double Circle::Diameter() const {return 2 * m_radius; }

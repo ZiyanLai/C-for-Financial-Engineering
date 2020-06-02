@@ -11,8 +11,10 @@
 
 #include "point.hpp"
 #include "line.hpp"
-
+#include <iostream>
 using namespace std;
+
+
 
 int main()
 {   

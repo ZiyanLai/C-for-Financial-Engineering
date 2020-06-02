@@ -10,6 +10,8 @@
 /* Add Line class into namespace ZiyanLai::CAD */
 
 #include "line.hpp"
+using namespace std;
+
 namespace ZiyanLai
 {
     namespace CAD

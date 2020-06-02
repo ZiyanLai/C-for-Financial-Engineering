@@ -11,38 +11,46 @@
 
 #ifndef LINE_HPP
 #define LINE_HPP
-#include <iostream>
 #include "point.hpp"
 using namespace std; 
 
-class Line{
+class Line
+{
 private:
     Point p1; // Start Point    
     Point p2; // End Point
 public:
-    Line(); // Default Constructor
+    // Default Constructor
+    Line();     
+    // Constructor takes value
+    Line(const Point& startP, const Point& endP);   
 
-    Line(const Point& startP, const Point& endP);   // Constructor takes value
+    // Copy Constructor
+    Line(const Line& anotherLine);                  
+    
+    // Destructor
+    ~Line();                                        
 
-    Line(const Line& anotherLine);                  // Copy Constructor
-       
-    ~Line();                                        // Destructor
+    // Assignment Operator
+    Line& operator = (const Line& anotherLine);     
 
-    Line& operator = (const Line& anotherLine);     // Assignment Operator
+    // Getter for start point 
+    Point startPoint() const;                       
 
-    Point startPoint() const;                       // Setter for start point 
+    // Getter for end point
+    Point endPoint() const;                         
 
-    Point endPoint() const;                         // Setter for end point
+    // Setter for start point 
+    void startPoint(const Point& anotherP);           
 
-    void startPoint(const Point& anotherP);         // Getter for start point   
+    // Setter for end point
+    void endPoint(const Point& anotherP);           
 
-    void endPoint(const Point& anotherP);           // Getter for end point
+    // Function to display the attributes of line
+    string ToString() const;                          
 
-    string ToString() const;                          // Function to display the attributes of line
-
-    double Length() const;                          // Function to calculate the length of line
-
-
+    // Function to calculate the length of line
+    double Length() const;                          
 };
 
 #endif

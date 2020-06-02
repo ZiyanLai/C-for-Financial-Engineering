@@ -10,7 +10,7 @@
 /* Experiment with new to create objects on heap */
 
 #include "point.hpp"
-
+#include <iostream>
 using namespace std;
 
 int main()
@@ -28,7 +28,7 @@ int main()
     // and assign it to a value calculated by the Distance function of Point class
     double distanceBetweenP1andP2 = pointPtr1->Distance(*pointPtr2);
 
-    // print the X and Y coordiantes of all points using their overloaded Ostream Operators
+    // print the X and Y coordiantes of all 3 points using their overloaded Ostream Operators
     cout << "Point 1: " << *pointPtr1 << "\nPoint 2: " << *pointPtr2 << "\nPoint 3: " << *pointPtr3 << endl;
     
     // print the calculated distance between point 1 and point 2
@@ -54,7 +54,7 @@ int main()
     Point* pointArray = new Point[arraySize]; // Cannot use other constructors other than default constructor when initializing an Point array
     
     // print out the first Point in the array using the Ostream Operator
-    cout << *pointArray << endl;
+    cout << "First Point in the array: " << *pointArray << endl;
     // delete the array pointer created with new
     delete[] pointArray;
 

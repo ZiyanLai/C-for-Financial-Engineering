@@ -11,8 +11,8 @@
 
 #ifndef ARRAY_HPP
 #define ARRAY_HPP 
-#include <iostream>
 #include "point.hpp"
+using namespace std;
 
 // define out Array class
 class Array

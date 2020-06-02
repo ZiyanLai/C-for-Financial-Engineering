@@ -7,9 +7,10 @@
  * Copyright © 2020 Ziyan Lai. All rights reserved.
 */
 
-/* Add Ostream Opeartors in addition to the previous Line class */
+/* Make Ostream Opeartors as a friend in addition to the previous Line class */
 
 #include "line.hpp"
+using namespace std;
 
 Line::Line() : p1(0, 0), p2(0, 0) {} // Default Constructor
 
@@ -63,6 +64,8 @@ double Line::Length() const {
 // Ostream operator as a friend of Line class
 ostream& operator << (ostream&os, const Line& l)
 {
+// Now we don't need to call ToString() function
+// but instead directly access the private members
  os << "Start Point: " << l.p1 << "; End Point: " << l.p2;
  return os;
 }

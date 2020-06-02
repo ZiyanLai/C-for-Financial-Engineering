@@ -11,9 +11,8 @@
 
 #ifndef POINT_HPP
 #define POINT_HPP
-#include <iostream>
+#include <sstream>
 #include <cmath>
-#include "sstream"
 using namespace std;
 
 // Point class
@@ -57,6 +56,7 @@ public:
 
 };
 
+// Ostream operator for Point class
 ostream& operator << (ostream& os, const Point& p); // Ostream operator 
 
 

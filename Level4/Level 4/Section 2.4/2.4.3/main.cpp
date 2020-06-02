@@ -10,7 +10,7 @@
 /* Adding a constructor and making it explicit */
 
 #include "point.hpp"
-
+#include <iostream>
 using namespace std;
 
 int main()
@@ -18,6 +18,9 @@ int main()
     // Constructors as conversion operator
     Point p(1.0, 1.0);
     // if (p == 1.0) cout << "Equal!" << endl; 
+
+    // Now that the Constructor which takes 1 value is 'explict' 
+    // We can only used it explicitly
     if (p == Point(1.0)) cout << "Equal!" << endl; 
     else cout << "Not equal" << endl;
 

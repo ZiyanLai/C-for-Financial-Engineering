@@ -11,11 +11,11 @@
 
 #ifndef LINE_HPP
 #define LINE_HPP
-#include <iostream>
 #include "point.hpp"
 using namespace std; 
 
-class Line{
+class Line
+{
 private:
     Point p1; // Start Point    
     Point p2; // End Point
@@ -35,16 +35,16 @@ public:
     // Assignment Operator
     Line& operator = (const Line& anotherLine);     
 
-    // Setter for start point 
+    // Getter for start point 
     Point startPoint() const;                       
 
-    // Setter for end point
+    // Getter for end point
     Point endPoint() const;                         
 
-    // Getter for start point 
+    // Setter for start point 
     void startPoint(const Point& anotherP);           
 
-    // Getter for end point
+    // Setter for end point
     void endPoint(const Point& anotherP);           
 
     // Function to display the attributes of line
@@ -55,5 +55,7 @@ public:
 
 };
 
-ostream& operator << (ostream& os, const Line& l); // Ostream operator 
+// Ostream operator for Line class
+ostream& operator << (ostream& os, const Line& l);  
+
 #endif

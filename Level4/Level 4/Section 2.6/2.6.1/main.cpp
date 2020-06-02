@@ -17,7 +17,6 @@
 #include "array.hpp"
 using namespace std;
 
-
 int main()
 {
     // use the full namespace for Point class
@@ -50,11 +49,10 @@ int main()
     // declartion for using a Circle class with the Alias
     using ZC::Circle;
     // create a Circle object with constructor
-    // here we create the Point object with the Alias we declared
+    // here we create the Point object with the Alias ZC we declared
     Circle circle(ZC::Point(30,-30), 5);
     // print the circle
     cout << "\ncircle: " << circle << endl;
-
 
     return 0;
     

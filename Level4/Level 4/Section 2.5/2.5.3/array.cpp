@@ -9,7 +9,9 @@
 
 /* Array class function implementations */
 
+#include <iostream>
 #include "array.hpp"
+using namespace std;
 
 // Default Constructor to create an array of size 10
 Array::Array() : m_data(new Point[10]), m_size(10) {}
@@ -117,10 +119,10 @@ Point& Array::operator [] (int index)
 
 // const version of index operator
 // here we return a const reference of Point and make the function const
-// the purpose is:
+// the purposes are:
 // 1. restrict to read only
-// 2. allow to return by reference but not allow to change on the reference
-// 3. allow to operate on const Array type
+// 2. the first const allows to return by reference but not allow to change on the reference
+// 3. the second const allows to operate on const Array type
 const Point& Array::operator [] (int index) const
 {
     // if the index is out of bound

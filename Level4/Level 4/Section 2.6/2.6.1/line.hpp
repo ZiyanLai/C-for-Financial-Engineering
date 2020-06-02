@@ -11,7 +11,6 @@
 
 #ifndef LINE_HPP
 #define LINE_HPP
-#include <iostream>
 #include "point.hpp"
 using namespace std; 
 

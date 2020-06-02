@@ -10,6 +10,8 @@
 /* Add Array class into namespace ZiyanLai::Containers */
 
 #include "array.hpp"
+using namespace std;
+
 namespace ZiyanLai
 {
     namespace Containers

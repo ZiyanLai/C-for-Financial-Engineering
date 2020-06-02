@@ -10,7 +10,7 @@
 /* Create array to store Point pointers */
 
 #include "point.hpp"
-
+#include <iostream>
 using namespace std;
 
 int main()

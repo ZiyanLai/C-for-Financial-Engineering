@@ -7,12 +7,12 @@
  * Copyright © 2020 Ziyan Lai. All rights reserved.
 */
 
-// Test operators
+// Test Ostream Operators
 
 #include "point.hpp"
 #include "line.hpp"
 #include "circle.hpp"
-
+#include <iostream>
 using namespace std;
 
 int main()

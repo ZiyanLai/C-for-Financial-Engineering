@@ -7,13 +7,12 @@
  * Copyright © 2020 Ziyan Lai. All rights reserved.
 */
 
-/* Add Ostream Opeartors in addition to the previous Point class */
+/* Make Ostream Opeartors as a friend in addition to the previous Point class */
 
 #ifndef POINT_HPP
 #define POINT_HPP
-#include <iostream>
+#include <sstream>
 #include <cmath>
-#include "sstream"
 using namespace std;
 
 // Point class

@@ -11,18 +11,17 @@
 
 #ifndef CIRCLE_HPP
 #define CIRCLE_HPP
-#include <iostream>
 #include "point.hpp"
 #define _USE_MATH_DEFINES
 #include <cmath>
-
 using namespace std;
 
 namespace ZiyanLai
 {
     namespace CAD
     {
-        class Circle{
+        class Circle
+        {
         private:
             Point center;
             double m_radius;

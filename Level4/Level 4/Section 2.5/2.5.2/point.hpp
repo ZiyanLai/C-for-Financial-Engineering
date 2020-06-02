@@ -11,9 +11,8 @@
 
 #ifndef POINT_HPP
 #define POINT_HPP
-#include <iostream>
+#include <sstream>
 #include <cmath>
-#include "sstream"
 using namespace std;
 
 // Point class

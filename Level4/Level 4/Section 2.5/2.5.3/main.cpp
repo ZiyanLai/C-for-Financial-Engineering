@@ -11,6 +11,8 @@
 
 #include "point.hpp"
 #include "array.hpp"
+#include <iostream>
+using namespace std;
 
 int main()
 {
@@ -33,18 +35,18 @@ int main()
     cout << "array1 index 1: " << array1.GetElement(1) <<  "; array1 index 3: "<< array1.GetElement(3) << endl;
     
     // create array3 with copy constructor
+    cout << "create array3 by with Copy Constructor by copying array1;" << endl;
     Array array3(array1);
     // create array4 with assignment operator
+    cout << "create array4 by with Assignment Operator by assigning array1;" << endl;
     Array array4 = array1;
 
     // print out index 1 and 3 in both array 3 and array 4 to see if the values are the same as array1
     cout << "array3 index 1: " << array3[1] <<  "; array3 index 3: " << array3[3] << endl;
-    cout << "array4 index 1: " << array4[1] <<  "; array3 index 4: " << array4[3] << endl;
+    cout << "array4 index 1: " << array4[1] <<  "; array4 index 3: " << array4[3] << endl;
 
     // create a const Array and use copy constructor
     const Array array5(array1);
     // test the const version of [] operator and print the value of third index on screen
     cout << "const array5 index 3: " << array5[3] << endl;
-
-
 }                   

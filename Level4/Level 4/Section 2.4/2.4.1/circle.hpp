@@ -11,11 +11,9 @@
 
 #ifndef CIRCLE_HPP
 #define CIRCLE_HPP
-#include <iostream>
 #include "point.hpp"
 #define _USE_MATH_DEFINES
 #include <cmath>
-
 using namespace std;
 
 class Circle{
@@ -49,7 +47,7 @@ public:
     void CenterPoint(const Point& anotherP); 
 
 //  Setter of the radius
-    void Radius(const double& anotherR); 
+    void Radius(double anotherR); 
 
 //  Calculate the diameter
     double Diameter() const; 
