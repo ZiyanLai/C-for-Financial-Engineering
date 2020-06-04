@@ -16,7 +16,8 @@
 #include <cmath>
 using namespace std;
 
-class Circle{
+class Circle
+{
 private:
     Point center;
     double m_radius;
@@ -38,7 +39,7 @@ public:
     Circle& operator = (const Circle& anotherC);
 
 //  Getter of the center
-    Point CenterPoint() const; 
+    const Point& CenterPoint() const; 
 
 //  Getter of the radius
     double Radius() const; 

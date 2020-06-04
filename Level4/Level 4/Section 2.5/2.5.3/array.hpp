@@ -46,7 +46,7 @@ public:
 
     // Getter of the element in Array
     // here we assume the index can be negative integer
-    Point& GetElement(int index) const;
+    const Point& GetElement(int index) const;
 
     // index operator to get element in Array
     // here we assume the index can be negative integer

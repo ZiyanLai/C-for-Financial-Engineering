@@ -35,10 +35,10 @@ public:
     Line& operator = (const Line& anotherLine);     
 
     // Getter for start point 
-    Point startPoint() const;                       
+    const Point& startPoint() const;                       
 
     // Getter for end point
-    Point endPoint() const;                         
+    const Point& endPoint() const;                         
 
     // Setter for start point 
     void startPoint(const Point& anotherP);           

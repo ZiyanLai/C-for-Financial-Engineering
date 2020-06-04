@@ -90,7 +90,7 @@ void Array::SetElement(int index, const Point& newP)
 }
 
 // Getter of the element in Array
-Point& Array::GetElement(int index) const
+const Point& Array::GetElement(int index) const
 {   
     // if the index is out of bound
     if (index > m_size - 1)

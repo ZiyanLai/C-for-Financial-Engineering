@@ -40,7 +40,7 @@ Circle& Circle::operator = (const Circle& anotherC)
 }
 
 // Getter of the center point
-Point Circle::CenterPoint() const { return center; }
+const Point& Circle::CenterPoint() const { return center; }
 
 // Getter of the radius
 double Circle::Radius() const { return m_radius; }

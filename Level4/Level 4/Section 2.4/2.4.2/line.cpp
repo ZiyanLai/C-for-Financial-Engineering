@@ -38,10 +38,10 @@ Line& Line::operator=(const Line& anotherLine)
 }
 
 // Getter of start point
-Point Line::startPoint() const { return p1; } 
+const Point& Line::startPoint() const { return p1; } 
 
 // Getter of end point
-Point Line::endPoint() const { return p2; }
+const Point& Line::endPoint() const { return p2; }
 
 // Setter of start point
 void Line::startPoint(const Point& anotherP){ p1 = anotherP; }

@@ -50,7 +50,7 @@ namespace ZiyanLai
 
             // Getter of the element in Array
             // here we assume the index can be negative integer
-            CAD::Point& GetElement(int index) const;
+            const CAD::Point& GetElement(int index) const;
 
             // index operator to get element in Array
             // here we assume the index can be negative integer

@@ -93,7 +93,7 @@ namespace ZiyanLai
         }
 
         // Getter of the element in Array
-        CAD::Point& Array::GetElement(int index) const
+        const CAD::Point& Array::GetElement(int index) const
         {   
             // if the index is out of bound
             if (index > m_size - 1)
