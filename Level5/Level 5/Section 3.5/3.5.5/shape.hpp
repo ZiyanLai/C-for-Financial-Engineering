@@ -25,7 +25,7 @@ public:
     // Default Constructor
     Shape();
 
-    // Constructor that takes a value
+    // Copy Constructor
     Shape(const Shape& anotherS);
 
     // virtual Destructor
@@ -41,7 +41,7 @@ public:
     int ID() const;
 
     // Draw function 
-    // virtual void Draw();     // since Shape's Draw() is just and concept,
+    // virtual void Draw();     // since Shape's Draw() is just an concept,
                                 // we set it to pure virtual
     virtual void Draw() const = 0;
 

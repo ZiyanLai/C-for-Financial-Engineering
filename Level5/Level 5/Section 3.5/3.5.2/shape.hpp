@@ -25,7 +25,7 @@ public:
     // Default Constructor
     Shape();
 
-    // Constructor that takes a value
+    // Copy Constructor
     Shape(const Shape& anotherS);
 
     // virtual Destructor

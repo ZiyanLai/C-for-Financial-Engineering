@@ -18,8 +18,8 @@ using namespace std;
 // initialize m_id with a random number 
 Shape::Shape() : m_id(rand()){}
 
-// Constructor that takes a value
-Shape::Shape(const Shape& anotherP) : m_id(anotherP.m_id){}
+// Copy Constructor
+Shape::Shape(const Shape& anotherS) : m_id(anotherS.m_id){}
 
 // virtual Destructor
 Shape::~Shape(){}

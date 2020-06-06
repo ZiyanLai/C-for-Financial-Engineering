@@ -11,7 +11,8 @@
 #define Range_HPP
 
 
-template <class Type=double> class Range
+template <class Type=double> 
+class Range
 {
 
 private:

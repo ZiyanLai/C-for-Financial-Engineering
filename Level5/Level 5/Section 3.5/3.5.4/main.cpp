@@ -31,6 +31,8 @@ int main()
     // for each object, use polymorphic to call their own Draw function
 	for (int i = 0; i != 6; i++) shapes[i]->Draw();
 	for (int i = 0; i != 6; i++) delete shapes[i];
+
     // Shape shape; We cannot create a Shape instance because Shape class is an abstract class
+    
     return 0;
 }

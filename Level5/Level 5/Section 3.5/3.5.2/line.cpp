@@ -75,7 +75,7 @@ string Line::ToString() const{
     stringstream ss;
     ss << "Start " << p1.ToString() << " End " << p2.ToString();
     string s = Shape::ToString();
-    ss << " "<<s;
+    ss << " " << s;
     return ss.str(); 
 }
 

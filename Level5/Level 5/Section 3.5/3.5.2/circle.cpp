@@ -85,7 +85,7 @@ string Circle::ToString() const {
     stringstream ss;
     ss << "Center: " << center.ToString() << " Radius: " << m_radius;
     string s = Shape::ToString();
-    ss << " "<<s;
+    ss << " " << s;
     return ss.str();
 }
 

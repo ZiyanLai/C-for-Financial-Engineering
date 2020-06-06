@@ -66,7 +66,7 @@ string Point::ToString() const
     stringstream ss;
     ss << "Point(" << m_x << "," << m_y << ")";
     string s = Shape::ToString();
-    ss << " "<< s;
+    ss << " " << s;
     return ss.str();
 }
 

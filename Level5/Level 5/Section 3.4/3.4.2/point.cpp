@@ -22,6 +22,7 @@ Point::Point() // here the Default Constructor of Shape class will be called
     m_x = 0.0; 
     m_y = 0.0;
 }
+
 // Copy Constructor
 Point::Point(const Point& anotherP) : Shape(anotherP)   // copy the base portion
 {
