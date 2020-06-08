@@ -11,8 +11,6 @@
 #include <vector>
 #include "boost/shared_ptr.hpp"
 #include "Point.hpp"
-
-
 // These classes are an upgrade from raw pointers to shared pointers
 class C1
 { 

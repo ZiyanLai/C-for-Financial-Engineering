@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "memory": "cpp",
+        "istream": "cpp",
+        "functional": "cpp",
+        "ostream": "cpp",
+        "iomanip": "cpp",
+        "random": "cpp"
+    }
+}

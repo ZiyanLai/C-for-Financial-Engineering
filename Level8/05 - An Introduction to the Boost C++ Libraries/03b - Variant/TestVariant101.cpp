@@ -56,8 +56,8 @@ int main()
 	 string stA;
 	 try
 	 {
-		 ptA = boost::get<Point>(myVariant);
-	//	 stA = boost::get<string>(myVariant); // won't work, wrong type
+		//  ptA = boost::get<Point>(myVariant);
+		 stA = boost::get<string>(myVariant); // won't work, wrong type
 	 }
 	 catch (boost::bad_get& err)
 	 {
