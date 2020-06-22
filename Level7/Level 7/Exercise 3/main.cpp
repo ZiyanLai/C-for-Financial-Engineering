@@ -16,7 +16,7 @@
 using namespace std;
 
 // global function to check if the input is greater
-bool IsGreater(double input)
+bool IsSmaller(double input)
 {
     // initialize a literal value as standard
     const double standard = 6;
@@ -44,7 +44,7 @@ int main()
 
 
     // call the global function to count 
-    int countNum = count_if(myVec.begin(), myVec.end(), IsGreater);    
+    int countNum = count_if(myVec.begin(), myVec.end(), IsSmaller);    
     // print the result
     cout << "\n\nusing global function:\n";
     cout << "There are " << countNum << " element(s) that are smaller than 6"<< endl;

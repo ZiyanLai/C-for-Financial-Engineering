@@ -6,7 +6,7 @@
  * @lastModifiedDate: 2020-06-02
  * Copyright © 2020 Ziyan Lai. All rights reserved.
 */
-// ???????????????????????????????
+
 #include <iostream>
 using namespace std;
 class A{
@@ -18,7 +18,7 @@ public:
   int GetA() { return m_da; }
   A& operator = (const A& source) { m_da=source.m_da; return *this; }
 };
-
+	
 class B: public A
 {
 private:
@@ -33,8 +33,6 @@ public:
 int main()
 {
   B b1(10, 20); B b2(30, 40);
-
-
   b1=b2;
   std::cout<<b1.GetA()<<", "<<b1.GetB()<<std::endl;
   return 0;

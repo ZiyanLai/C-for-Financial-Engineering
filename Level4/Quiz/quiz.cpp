@@ -21,5 +21,9 @@ int main(int x, char* y[])
     int x=30;
     std::cout<<::x<<std::endl;
   }
+
+  int** arr = new int* [5];
+
+
   return 0;
 }

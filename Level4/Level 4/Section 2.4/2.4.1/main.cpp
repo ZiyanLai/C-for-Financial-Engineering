@@ -9,6 +9,7 @@
 
 // Test operators
 
+
 #include "point.hpp"
 #include "line.hpp"
 #include "circle.hpp"

@@ -29,7 +29,7 @@ int main()
 	 cout << myType << endl;
 	 
 	 // Gives compiler error
-	// myType = string("dddd");
+	 // myType = string("dddd");
 
 	 // Some ways to construct a variant
      variant<long, string, Point> myVariant; // default-constructed long
@@ -65,6 +65,5 @@ int main()
 	 }
 
 	 cout << "Value got from Variant: " << ptA << endl;
-
      return 0;
 }

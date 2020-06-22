@@ -222,7 +222,6 @@ matrix PerpetualAmericanOption::matrixPricer(const vector<double> param1, const 
 	matrix resMat;
 	// initialize the current row vector 
 	vector<double> currRes;
-
 	// for each value in parameter vector 1
 	for (int i = 0; i != param1.size(); ++i)
 	{

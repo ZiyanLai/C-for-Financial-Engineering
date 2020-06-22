@@ -68,7 +68,7 @@ Option::~Option() {}
 Option& Option::operator=(const Option& rhs)
 {
 	// if self assignment
-	if (this == &rhs)
+	if (   this == &rhs)
 	{
 		// return this object
 		return *this;

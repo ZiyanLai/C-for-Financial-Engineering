@@ -18,8 +18,12 @@ int main()
      // Creating tuples using Tuple constructor with appropriate arguments
      tuple<string, int>  myTuple = boost::make_tuple(string("position x"), 0);
 
+
+     tuple<string, int> tuple1("123", 2);
+
 	 // Print the tuple
 	 cout << myTuple << endl;
-
+      
+      cout << tuple1 << endl;
      return 0;
 }

@@ -33,7 +33,7 @@ private:
 public:
 	C2(boost::shared_ptr<double> value) : d(value) {}
 	virtual ~C2() { cout << "\nC2 destructor\n"; }
-	void print() const { cout << "Value " << *d; }
+	void print() const { cout << "Valuuuue " << *d; }
 };
 
 class D1
@@ -96,14 +96,14 @@ void doIt()
 		cout << "Built-in types\n";
 		boost::shared_ptr<double> commonValue(new double (3.1415));
 		cout << "Reference count: " << commonValue.use_count() << endl;
-
-		{
+		
+		{	
 			C1 object1(commonValue);
-	//		object1.print();
+			object1.print();
 		}
 
 		C2 object2(commonValue);
-	//	object2.print();
+		object2.print();
 	}
 
 	cout << "\nUser-defined types\n";
