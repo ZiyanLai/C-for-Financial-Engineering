@@ -7,6 +7,7 @@
  * Copyright © 2020 Ziyan Lai. All rights reserved.
 */
 #include <iostream>
+using namespace std;
 
 int main()
 {
