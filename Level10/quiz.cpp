@@ -6,7 +6,6 @@
  * @lastModifiedDate: 2020-06-14
  * Copyright © 2020 Ziyan Lai. All rights reserved.
 */
-
 #include <iostream>
 using namespace std;
 
